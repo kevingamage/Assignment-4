@@ -1,0 +1,14 @@
+<!-- Return to homepage link -->
+<%= link_to("Return to Home Page", books_path, :class => 'back-link') %>
+
+<% @page_title = "Show Details Page" %>
+
+<div class="show">
+  <div class="page">
+    <h2> Show Book </h2>
+  </div>
+
+  <div class="details">
+    <%= render(:partial => 'view') %>
+  </div>
+</div>
