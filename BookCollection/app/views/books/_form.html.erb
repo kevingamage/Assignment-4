@@ -1,0 +1,27 @@
+<table class="form_table">
+  <tr>
+    <th>Title</th>
+    <td> <%= f.text_field(:title) %> </td>
+  </tr>
+  <tr>
+    <th>Author</th>
+    <td> <%= f.text_field(:author) %> </td>
+  </tr>
+  <tr>
+    <th>Genre</th>
+    <td><%= f.select :genre, ['Fiction', 'Nonfiction', 'Action', 'Crime', 'Horror', 'Thriller', 'Travel', 'Drama', 'History'] %></td>
+  <tr>
+    <th>Price</th>
+    <td> <%= f.number_field :price, step: 0.01 , min: 0 %> </td>
+  </tr>
+  <tr>
+    <th>Published Date</th>
+    <td>
+      <!-- THIS DOES NOT WORK BECAUSE THE TYPE OF publish_date IS A STRING AND NOT A DATE -->
+      <%#= f.date_select :publish_date %>
+
+      <!-- Use html directly to get date input -->
+      <input type="date" id="book_publish_date" name="book[publish_date]">
+    </td>
+  </tr>
+</table>

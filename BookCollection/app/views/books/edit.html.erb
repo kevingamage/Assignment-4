@@ -1,0 +1,17 @@
+<!-- Return to homepage link -->
+<%= link_to("Return to book collection", books_path, :class => 'back-link') %>
+
+<div class="edit">
+  <div class="page">
+    <h2>Edit a book</h2>
+  </div>
+
+  <%= form_for(@book) do |f| %>
+
+      <%= render(:partial => 'form', :locals => {:f => f}) %>
+
+    <div class="form-Buttons">
+        <%= f.submit("Edit book") %>
+    </div>
+  <% end %>
+</div>
