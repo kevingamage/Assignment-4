@@ -1,0 +1,85 @@
+// Place all the styles related to the Books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/* Primary stylesheet */
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 980px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-size: 12px;
+  text-align: center;
+}
+
+table {
+  vertical-align: top;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.show {
+  table {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  tr, td {
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  th {
+    width: 30%;
+  }
+}
+
+.index {
+  text-align: center;
+  table {
+    width: 100%;
+  }
+  tr, td {
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  th {
+   text-align: center;
+   padding: 3px;
+ }
+}
+
+.add, .delete, .edit{
+  text-align: center;
+  tr, td, th {
+    vertical-align: center;
+    text-align: center;
+    padding: 3px;
+  }
+}
+
+.form_table {
+  text-align: center;
+}
+
+.notice {
+  padding: 20px;
+  background: #97f79b;
+  border: 1px solid;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 20px;
+}

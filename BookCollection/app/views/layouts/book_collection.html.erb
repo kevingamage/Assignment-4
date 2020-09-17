@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Collection: <%= @page_title %> </title>
+    <%= stylesheet_link_tag('application', :media => 'all') %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Book Collection</h1>
+    </div>
+
+    <div class="main">
+      <!-- Flash notice -->
+      <% if !flash[:notice].blank? %>
+        <div class="notice">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="content">
+      <%= yield %>
+    </div>
+  </body>
+</html>

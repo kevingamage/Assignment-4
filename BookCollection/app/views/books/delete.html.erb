@@ -1,0 +1,22 @@
+<% @page_title = "Delete Book Page" %>
+
+<!-- Return to homepage link -->
+<%= link_to("Return to book collection", books_path, :class => 'back-link') %>
+
+<div class="delete">
+  <div class="page">
+    <h2>Delete book</h2>
+  </div>
+
+
+  <%= form_for(@book, :method => 'delete') do |f| %>
+
+  <%= render(:partial => 'view', :locals => {:f => f}) %>
+
+
+    <p>Are you sure you want to delete this book?</p>
+    <div class="form-Buttons">
+        <%= f.submit("Delete book") %>
+    </div>
+  <% end %>
+</div>
